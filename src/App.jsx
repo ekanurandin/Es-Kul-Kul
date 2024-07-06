@@ -8,6 +8,7 @@ import Tentang from './screens/Tentang';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import IconF from 'react-native-vector-icons/FontAwesome5';
 import IconA from 'react-native-vector-icons/FontAwesome6';
+import DetailProduk from './screens/DetailProduk';
 
 const Stack = createNativeStackNavigator();
 const Tabs = createBottomTabNavigator();
@@ -23,6 +24,7 @@ const MenuBawah = () => {
           tabBarIcon: ({color, size}) => (
             <Icon name="home" color={color} size={size} />
           ),
+          headerShown: false,
         }}
       />
       <Tabs.Screen
@@ -33,6 +35,7 @@ const MenuBawah = () => {
           tabBarIcon: ({color, size}) => (
             <IconF name="user-alt" color={color} size={size} />
           ),
+          headerShown: false,
         }}
       />
       <Tabs.Screen
@@ -43,6 +46,7 @@ const MenuBawah = () => {
           tabBarIcon: ({color, size}) => (
             <IconA name="ice-cream" color={color} size={size} />
           ),
+          headerShown: false,
         }}
       />
     </Tabs.Navigator>
@@ -55,6 +59,11 @@ const App = () => {
         <Stack.Screen
           name="Tab"
           component={MenuBawah}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="DetailProduk"
+          component={DetailProduk}
           options={{headerShown: false}}
         />
       </Stack.Navigator>
