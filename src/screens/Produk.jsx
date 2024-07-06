@@ -1,34 +1,59 @@
-import {Image, StyleSheet, Text, View, ScrollView} from 'react-native';
+import {
+  Image,
+  StyleSheet,
+  Text,
+  View,
+  ScrollView,
+  TouchableOpacity,
+} from 'react-native';
 import React from 'react';
+// eslint-disable-next-line prettier/prettier
+import { useNavigation } from '@react-navigation/native';
 import Img1 from '../assets/images/kulkul1.jpg';
 import Img2 from '../assets/images/kulkul2.jpg';
 import Img3 from '../assets/images/kulkul3.jpg';
 import Img4 from '../assets/images/kulkul4.jpg';
 
 const Produk = () => {
+  const navigation = useNavigation();
+
+  // eslint-disable-next-line prettier/prettier
+  const handlePress = (productName) => {
+    // eslint-disable-next-line prettier/prettier
+    navigation.navigate('DetailProduk', { name: productName });
+  };
+
   return (
     <ScrollView contentContainerStyle={styles.scrollContainer}>
       <View style={styles.container}>
         <Text style={styles.title}>Produk Es Kul-Kul</Text>
         <View style={styles.row}>
-          <View style={styles.imageContainer}>
+          <TouchableOpacity
+            style={styles.imageContainer}
+            onPress={() => handlePress('Kul-Kul Semangka')}>
             <Image source={Img1} style={styles.image} />
             <Text style={styles.subtitle}>Kul-Kul Semangka</Text>
-          </View>
-          <View style={styles.imageContainer}>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.imageContainer}
+            onPress={() => handlePress('Kul-Kul Pepaya')}>
             <Image source={Img2} style={styles.image} />
             <Text style={styles.subtitle}>Kul-Kul Pepaya</Text>
-          </View>
+          </TouchableOpacity>
         </View>
         <View style={styles.row}>
-          <View style={styles.imageContainer}>
+          <TouchableOpacity
+            style={styles.imageContainer}
+            onPress={() => handlePress('Kul-Kul Strawberry')}>
             <Image source={Img3} style={styles.image} />
             <Text style={styles.subtitle}>Kul-Kul Strawberry</Text>
-          </View>
-          <View style={styles.imageContainer}>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.imageContainer}
+            onPress={() => handlePress('Kul-Kul Pisang')}>
             <Image source={Img4} style={styles.image} />
             <Text style={styles.subtitle}>Kul-Kul Pisang</Text>
-          </View>
+          </TouchableOpacity>
         </View>
       </View>
     </ScrollView>
@@ -63,11 +88,12 @@ const styles = StyleSheet.create({
   imageContainer: {
     width: '48%',
     alignItems: 'center',
-    padding: 10,
+    padding: 15,
     backgroundColor: '#fff',
     borderRadius: 10,
     borderWidth: 1,
     borderColor: '#ddd',
+    marginRight: 10,
   },
   image: {
     width: 150,

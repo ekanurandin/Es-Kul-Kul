@@ -1,10 +1,10 @@
-/* eslint-disable no-unused-vars */
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 
 const DetailProduk = () => {
   return (
-    <View>
+    // eslint-disable-next-line react-native/no-inline-styles
+    <View style={{backgroundColor: '#FFE3AE', width: 1000, height: 1000}}>
       <Text>DetailProduk</Text>
     </View>
   );
@@ -12,4 +12,5 @@ const DetailProduk = () => {
 
 export default DetailProduk;
 
+// eslint-disable-next-line no-unused-vars
 const styles = StyleSheet.create({});
