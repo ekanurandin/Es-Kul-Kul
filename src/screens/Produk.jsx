@@ -13,6 +13,10 @@ import Img1 from '../assets/images/kulkul1.jpg';
 import Img2 from '../assets/images/kulkul2.jpg';
 import Img3 from '../assets/images/kulkul3.jpg';
 import Img4 from '../assets/images/kulkul4.jpg';
+import Img5 from '../assets/images/kulkul5.jpg';
+import Img6 from '../assets/images/kulkul6.jpg';
+import Img7 from '../assets/images/Kulkul7.jpg';
+import Img8 from '../assets/images/kulkul8.jpeg';
 
 const Produk = () => {
   const navigation = useNavigation();
@@ -52,6 +56,34 @@ const Produk = () => {
             style={styles.imageContainer}
             onPress={() => handlePress('Kul-Kul Pisang')}>
             <Image source={Img4} style={styles.image} />
+            <Text style={styles.subtitle}>Kul-Kul Pisang</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.row}>
+          <TouchableOpacity
+            style={styles.imageContainer}
+            onPress={() => handlePress('Kul-Kul Pisang')}>
+            <Image source={Img5} style={styles.image} />
+            <Text style={styles.subtitle}>Kul-Kul Pisang</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.imageContainer}
+            onPress={() => handlePress('Kul-Kul Pisang')}>
+            <Image source={Img6} style={styles.image} />
+            <Text style={styles.subtitle}>Kul-Kul Pisang</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.row}>
+          <TouchableOpacity
+            style={styles.imageContainer}
+            onPress={() => handlePress('Kul-Kul Pisang')}>
+            <Image source={Img7} style={styles.image} />
+            <Text style={styles.subtitle}>Kul-Kul Pisang</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.imageContainer}
+            onPress={() => handlePress('Kul-Kul Pisang')}>
+            <Image source={Img8} style={styles.image} />
             <Text style={styles.subtitle}>Kul-Kul Pisang</Text>
           </TouchableOpacity>
         </View>

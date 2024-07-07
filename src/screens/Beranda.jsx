@@ -19,4 +19,13 @@ const Beranda = () => {
 
 export default Beranda;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  // eslint-disable-next-line prettier/prettier
+  WelcomeText:{
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#333',
+    // eslint-disable-next-line prettier/prettier
+    marginBottom:20,
+  },
+});

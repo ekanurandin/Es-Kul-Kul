@@ -9,7 +9,9 @@ const Tentang = () => {
       <Image style={styles.image} source={rainbow} />
       <Text style={styles.title}>Kul Kul YMM</Text>
       <Text style={styles.description}>
-        Kul-Kul YMM adalah Es Kulkul yang Terbuat Dari Buah yang dibalut Coklat.
+        Kul-Kul YMM adalah Es Kulkul yang Terbuat Dari Buah yang dibekukan agar
+        tidak mengurangi kandungan vitamin di dalamnya dan kemudian dibalut
+        Coklat premium sehingga menjadi salah satu es yang kaya akan vitamin.
       </Text>
     </View>
   );
