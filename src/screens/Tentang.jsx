@@ -7,7 +7,7 @@ const Tentang = () => {
   return (
     <View style={styles.container}>
       <Image style={styles.image} source={rainbow} />
-      <Text style={styles.title}>Kul Kul YMM</Text>
+      <Text style={styles.title}>Tentang Kami</Text>
       <Text style={styles.description}>
         Kul-Kul YMM adalah Es Kulkul yang Terbuat Dari Buah yang dibekukan agar
         tidak mengurangi kandungan vitamin di dalamnya dan kemudian dibalut

@@ -62,29 +62,29 @@ const Produk = () => {
         <View style={styles.row}>
           <TouchableOpacity
             style={styles.imageContainer}
-            onPress={() => handlePress('Kul-Kul Pisang')}>
+            onPress={() => handlePress('Kul-Kul Nanas')}>
             <Image source={Img5} style={styles.image} />
-            <Text style={styles.subtitle}>Kul-Kul Pisang</Text>
+            <Text style={styles.subtitle}>Kul-Kul Nanas</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.imageContainer}
-            onPress={() => handlePress('Kul-Kul Pisang')}>
+            onPress={() => handlePress('Kul-Kul Melon')}>
             <Image source={Img6} style={styles.image} />
-            <Text style={styles.subtitle}>Kul-Kul Pisang</Text>
+            <Text style={styles.subtitle}>Kul-Kul Melon</Text>
           </TouchableOpacity>
         </View>
         <View style={styles.row}>
           <TouchableOpacity
             style={styles.imageContainer}
-            onPress={() => handlePress('Kul-Kul Pisang')}>
+            onPress={() => handlePress('Kul-Kul Anggur')}>
             <Image source={Img7} style={styles.image} />
-            <Text style={styles.subtitle}>Kul-Kul Pisang</Text>
+            <Text style={styles.subtitle}>Kul-Kul Anggur</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.imageContainer}
-            onPress={() => handlePress('Kul-Kul Pisang')}>
+            onPress={() => handlePress('Kul-Kul Roti')}>
             <Image source={Img8} style={styles.image} />
-            <Text style={styles.subtitle}>Kul-Kul Pisang</Text>
+            <Text style={styles.subtitle}>Kul-Kul Roti</Text>
           </TouchableOpacity>
         </View>
       </View>

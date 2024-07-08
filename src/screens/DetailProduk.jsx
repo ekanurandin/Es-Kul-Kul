@@ -18,9 +18,9 @@ export default function DetailProduk({ route }){
             </View>
             <View style={styles.productDetailsContainer}>
                 <Image source={Img1} style={styles.productImage} />
-                <Text style={styles.productTitle}>Produk</Text>
-                <Text style={styles.productDescription}>/....</Text>
-                <Text style={styles.productPrice}>.....</Text>
+                <Text style={styles.productTitle}>Semangka</Text>
+                <Text style={styles.productDescription}>/Big or Small</Text>
+                <Text style={styles.productPrice}> 5000 or 3000</Text>
             </View>
         </SafeAreaView>
     );

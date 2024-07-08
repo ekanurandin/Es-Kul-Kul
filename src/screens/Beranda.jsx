@@ -3,8 +3,7 @@
 /* eslint-disable no-unused-vars */
 import {Image, StyleSheet, View} from 'react-native';
 import React from 'react';
-import KulKul from '../components/KulKul';
-import bg from '../assets/images/bg.png';
+import bg from '../assets/images/Background.png';
 
 const Beranda = () => {
   return (
